@@ -3,3 +3,5 @@
 5-cp ./si.txt ./si/sicopia.txt
 6-cat Alumnos.txt | grep -v ^NOM | awk '{print $1,$2"-"$5}'
 7-awk '{print $1 " " $2}' Alumnos.txt | uniq | grep -c González 
+8-cat alumnos.txt | sed 's/Vicente/Pepe/'
+9-cat alumnos.txt | awk '{if ($4>=2010 && $4<=2019) print ($1,$2,$3,$4,$5)}'
