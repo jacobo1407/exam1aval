@@ -2,3 +2,4 @@
 4-mkdir si
 5-cp ./si.txt ./si/sicopia.txt
 6-cat Alumnos.txt | grep -v ^NOM | awk '{print $1,$2"-"$5}'
+7-awk '{print $1 " " $2}' Alumnos.txt | uniq | grep -c González 
